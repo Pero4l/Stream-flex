@@ -16,12 +16,12 @@ function Footer() {
 
                      <div>
                           <ul className='flex flex-col text-center lg:flex-row gap-10'>
-                              <li>HOME</li>
-                              <li>GENRE</li>
-                              <li>COUNTRY</li>
-                              <li>MOVIES</li>
-                              <li>TV SHOW</li>
-                              <li>NEWS & POPULAR</li>
+                              <li className='cursor-pointer'>HOME</li>
+                              <li className='cursor-pointer'>GENRE</li>
+                              <li className='cursor-pointer'>COUNTRY</li>
+                              <li className='cursor-pointer'>MOVIES</li>
+                              <li className='cursor-pointer'>TV SHOW</li>
+                              <li className='cursor-pointer'>NEWS & POPULAR</li>
                           </ul>
                      </div>
 
