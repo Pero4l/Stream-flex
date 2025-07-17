@@ -33,11 +33,11 @@ const MovieSeries = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5  gap-4 lg:mx-24">
           {data.map((movie) => (
             <Link to={`/movie/${movie.id}`} key={movie.id}>
-              <div className="h-full w-fit p-2 rounded shadow-md hover:transform hover:scale-105 transition-transform duration-200 cursor-pointer">
+              <div className="h-full w-full p-2 rounded shadow-md hover:transform hover:scale-105 transition-transform duration-200 cursor-pointer">
                 <img
                   src={`${IMAGE_BASE_URL}${POSTER_SIZE}${movie.poster_path}`}
                   alt={movie.title}
-                  className="bg-cover rounded w-[300px]"
+                  className="bg-cover rounded w-full "
                 />
                 <h2 className="text-black mt-2 text-xl font-medium">{movie.title}</h2>
                 <p className="text-sm text-black">{movie.release_date}</p>

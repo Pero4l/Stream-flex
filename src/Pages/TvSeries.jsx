@@ -33,16 +33,16 @@ function TvSeries() {
     <div className="px-6 py-4">
       <h1 className="text-2xl font-bold mb-4 text-gray-600 pt-10">Popular TV Series</h1>
       {data.length === 0 ? (
-        <p className="text-white">No series found</p>
+        <p className="text-black">No series found</p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 lg:mx-24  ">
           {data.map((series) => (
             <Link to={`/tv/${series.id}`} key={series.id}> 
-              <div className="h-full w-fit p-2 rounded shadow-md hover:transform hover:scale-105 transition-transform duration-200 cursor-pointer">
+              <div className="h-full w-full p-2 rounded shadow-md hover:transform hover:scale-105 transition-transform duration-200 cursor-pointer">
                 <img
                   src={`${IMAGE_BASE_URL}${POSTER_SIZE}${series.poster_path}`}
                   alt={series.name}
-                  className="w-[300px] rounded"
+                  className=" rounded"
                 />
                 <h2 className="text-black mt-2 text-xl font-medium">
                   {series.name}
