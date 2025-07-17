@@ -6,6 +6,7 @@ import MovieSeries from './Pages/MovieSeries'
 import TvSeries from './Pages/TvSeries'
 import SeriesDetails from './Pages/SeriesDetails'
 import MovieDetails from './Pages/MovieDetails'
+import Trending from './Pages/Popular'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
        <Route path='series' element={<TvSeries />} />
        <Route  path="/tv/:id" element={<SeriesDetails />}/>
        <Route path="/movie/:id" element={<MovieDetails />} />
+       <Route path='/trending' element={<Trending />} />
      
 
        

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { MdLiveTv } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -16,12 +17,12 @@ function Footer() {
 
                      <div>
                           <ul className='flex flex-col text-center lg:flex-row gap-10'>
-                              <li className='cursor-pointer'>HOME</li>
-                              <li className='cursor-pointer'>GENRE</li>
-                              <li className='cursor-pointer'>COUNTRY</li>
-                              <li className='cursor-pointer'>MOVIES</li>
-                              <li className='cursor-pointer'>TV SHOW</li>
-                              <li className='cursor-pointer'>NEWS & POPULAR</li>
+                          <Link to='/'><li className='cursor-pointer'>HOME</li></Link>
+                        <li className='cursor-pointer'>GENRE</li>
+                        <li className='cursor-pointer'>COUNTRY</li>
+                       <Link to='/movie'> <li className='cursor-pointer'>MOVIES</li></Link>
+                        <Link to='/series'><li className='cursor-pointer'>TV SERIES</li></Link>
+                        <Link to='/trending'><li className='cursor-pointer'>NEWS & POPULAR</li></Link>
                           </ul>
                      </div>
 

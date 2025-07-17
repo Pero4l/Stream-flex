@@ -27,10 +27,10 @@ const MovieDetails = () => {
       className="rounded-xl mb-4 w-[800px] object-cover"
     />
     <div className="pt-10">
-    <h1 className="text-3xl lg:text-5xl font-bold text-gray-200 mb-2 text-center">
+    <h1 className="text-3xl lg:text-5xl pb-5 font-bold text-gray-200 mb-2 text-center">
       {data.title}
     </h1>
-    <p className="text-center text-gray-400 text-sm mb-2">
+    <p className="text-center lg:pb-0 pb-3 text-gray-400 text-sm mb-2">
       Release Date: {data.release_date}
     </p>
     <p className="text-gray-300 text-sm leading-relaxed">{data.overview}</p>
