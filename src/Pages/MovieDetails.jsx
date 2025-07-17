@@ -20,7 +20,7 @@ const MovieDetails = () => {
 
   return (
 <div className="p-1 flex items-center justify-center">
-  <div className="bg-black rounded-2xl shadow-lg p-6 lg:flex gap-20 w-full">
+  <div className="bg-black lg:rounded-2xl shadow-lg p-6 lg:flex gap-20 w-full">
     <img
       src={`${IMAGE_BASE_URL}${POSTER_SIZE}${data.poster_path}`}
       alt={data.title}
