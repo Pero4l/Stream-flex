@@ -4,6 +4,7 @@ import { LuUser } from "react-icons/lu";
 import { IoIosSearch } from "react-icons/io";
 import { CiMenuFries } from "react-icons/ci";
 import { IoNotificationsOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -18,11 +19,11 @@ function Navbar() {
 
             <div>
                     <ul className='hidden lg:flex gap-10'>
-                        <li className='cursor-pointer'>HOME</li>
+                        <Link to='/'><li className='cursor-pointer'>HOME</li></Link>
                         <li className='cursor-pointer'>GENRE</li>
                         <li className='cursor-pointer'>COUNTRY</li>
-                        <li className='cursor-pointer'>MOVIES</li>
-                        <li className='cursor-pointer'>TV SHOW</li>
+                       <Link to='/movie'> <li className='cursor-pointer'>MOVIES</li></Link>
+                        <Link to='/series'><li className='cursor-pointer'>TV SERIES</li></Link>
                         <li className='cursor-pointer'>NEWS & POPULAR</li>
                     </ul>
                 </div>
