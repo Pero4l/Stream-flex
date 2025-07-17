@@ -18,7 +18,7 @@ function Navbar() {
         }
     }
 
-    
+
     const [isClicked, setIsClicked] = React.useState(false);
     const handleClick = () => {
         setIsClicked(!isClicked);
@@ -74,7 +74,6 @@ function Navbar() {
                         <Link to='/series'><li className='cursor-pointer'>TV SERIES</li></Link>
                         <Link to='/trending'><li className='cursor-pointer'>NEWS & POPULAR</li></Link>
                     </ul>
-      
     </div>
   )
 }
